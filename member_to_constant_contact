@@ -20,7 +20,7 @@ function check_and_add_member_to_constant_contact($user_id) {
     $group_list_id = 'LIST NUMBER 2 ID GOES HERE';      // Group memberships
 
     // Determine list to add the user to based on membership level- need level ID
-    $list_id = ($level_id === 5) ? $group_list_id : $individual_list_id;
+    $list_id = ($level_id === LEVEL_ID_NUM_GOES_HERE) ? $group_list_id : $individual_list_id;
 
     // Step 1: Check if the email already exists in Constant Contact
     $url_check = 'https://api.cc.email/v3/contacts?email=' . urlencode($email);
